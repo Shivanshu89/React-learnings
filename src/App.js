@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import IncreaseCount from './components/UseState.component';
+import UseReducerComp from './components/UseReducer.component';
+import ContextDemo from './components/Context.component';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+const App = ()=>{
+ 
+  return(
+    <div className='App'>
+      <div><span>UseState</span><br></br><IncreaseCount/></div>
+      <div><span>UseReducer</span><br></br><UseReducerComp/></div>
+      <div><span>Context</span><br></br><ContextDemo/></div>
+
     </div>
-  );
-}
+)};
 
 export default App;
